@@ -1,4 +1,5 @@
 import Counter from './Components/Counter'
+import TubeLight from './Components/Lightbulb'
 import './App.css'
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
   return (
     <>
       <Counter />
+
+      <TubeLight />
     </>
   )
 }
