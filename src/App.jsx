@@ -2,6 +2,7 @@ import Counter from './Components/Counter'
 import TubeLight from './Components/Lightbulb'
 import List from './Components/ListRendering'
 import './App.css'
+import Todo from './Components/Todo'
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
       <TubeLight />
 
       <List />
+
+      <Todo />
     </>
   )
 }
