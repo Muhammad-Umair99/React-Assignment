@@ -1,3 +1,4 @@
+import { Routes, Route, Link } from "react-router-dom"  
 import Counter from './Components/Counter'
 import TubeLight from './Components/Lightbulb'
 import List from './Components/ListRendering'
@@ -9,13 +10,21 @@ function App() {
 
   return (
     <>
-      <Counter />
+{/* Navigation Menu */}
+      <nav>
+        <Link to="/counter">Counter</Link> |{" "}
+        <Link to="/light">Tube Light</Link> |{" "}
+        <Link to="/list">List</Link> |{" "}
+        <Link to="/todo">Todo</Link>
+      </nav>
 
-      <TubeLight />
-
-      <List />
-
-      <Todo />
+      {/* Routes */}
+      <Routes>
+        <Route path="/counter" element={<Counter />} />
+        <Route path="/light" element={<TubeLight />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/todo" element={<Todo />} />
+      </Routes>
     </>
   )
 }
